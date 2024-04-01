@@ -139,9 +139,9 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/WebGl.loader.js";
         const config = {
-            dataUrl: buildUrl + "/WebGl.data.br",
-            frameworkUrl: buildUrl + "/WebGl.framework.js.br",
-            codeUrl: buildUrl + "/WebGl.wasm.br",
+            dataUrl: buildUrl + "/f62d5b3d7ac27ce4f26ef9f6341c018f.data.br",
+            frameworkUrl: buildUrl + "/89b389f12226788519db27c27bef7975.js.br",
+            codeUrl: buildUrl + "/c3efee34e66fb6856f681ebc7fbb5e22.wasm.br",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "AR Project",
@@ -150,8 +150,8 @@
             cacheControl: function (url) {
             // typically includes: .data, .bundle, .zpt
             if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
-             return "must-revalidate";
-            }
+             return "immutable";
+}
    
             if (url.match(/\.mp4/) || url.match(/\.custom/) || url.match(/\.zbin/)) {
                 return "immutable";
