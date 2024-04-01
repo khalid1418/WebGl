@@ -137,11 +137,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/WebGL2.loader.js";
+        const loaderUrl = buildUrl + "/WebGl.loader.js";
         const config = {
-            dataUrl: buildUrl + "/WebGL2.data.br",
-            frameworkUrl: buildUrl + "/WebGL2.framework.js.br",
-            codeUrl: buildUrl + "/WebGL2.wasm.br",
+            dataUrl: buildUrl + "/WebGl.data.br",
+            frameworkUrl: buildUrl + "/WebGl.framework.js.br",
+            codeUrl: buildUrl + "/WebGl.wasm.br",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "AR Project",
